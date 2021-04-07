@@ -29,7 +29,8 @@ struct Ing: Codable {
 }
 
 struct Consumer: Codable {
-  let phoneNumber, givenNames, surname, email: String
+  let phoneNumber, givenNames, surname:String
+  let email: String?
 }
 
 struct Item: Codable {

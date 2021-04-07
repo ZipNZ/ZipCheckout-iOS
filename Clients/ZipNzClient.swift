@@ -25,14 +25,14 @@ public class ZipNzClient: RestClient {
     _ completion: @escaping (Result<CreateOrderResponse, Error>) -> Void
   ) {
 
+    // Set consumer.email to autofill the checkout screens email address field
     let orderPayload = """
       {
           "amount": \(amount),
           "consumer": {
               "phoneNumber": "0200000000",
               "givenNames": "John",
-              "surname": "Smith",
-              "email": "c30052021.test@partpay.co.nz"
+              "surname": "Smith"
           },
           "billing": {
               "addressLine1": "Address Line 1",
