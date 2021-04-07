@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		709C2F8F261D68E300FC61F3 /* ZipWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C2F8E261D68E300FC61F3 /* ZipWebViewController.swift */; };
+		709C2F92261D73AC00FC61F3 /* ZipWebViewRedirect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C2F91261D73AC00FC61F3 /* ZipWebViewRedirect.swift */; };
+		709C2F95261D7F2100FC61F3 /* ZipWebViewRedirectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C2F94261D7F2100FC61F3 /* ZipWebViewRedirectProtocol.swift */; };
+		70CD6587261BFB2F0076E1E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CD6586261BFB2F0076E1E4 /* AppDelegate.swift */; };
+		70CD6589261BFB2F0076E1E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CD6588261BFB2F0076E1E4 /* SceneDelegate.swift */; };
+		70CD658B261BFB2F0076E1E4 /* CheckoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CD658A261BFB2F0076E1E4 /* CheckoutController.swift */; };
+		70CD658E261BFB2F0076E1E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70CD658C261BFB2F0076E1E4 /* Main.storyboard */; };
+		70CD6590261BFB310076E1E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70CD658F261BFB310076E1E4 /* Assets.xcassets */; };
+		70CD6593261BFB310076E1E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70CD6591261BFB310076E1E4 /* LaunchScreen.storyboard */; };
+		70CD659C261BFC270076E1E4 /* Auth0Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CD659B261BFC270076E1E4 /* Auth0Client.swift */; };
+		70CD659F261BFC450076E1E4 /* ZipNzClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CD659E261BFC450076E1E4 /* ZipNzClient.swift */; };
+		70CD65A3261C180D0076E1E4 /* Auth0TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CD65A2261C180D0076E1E4 /* Auth0TokenResponse.swift */; };
+		70EFBE29261C482800959485 /* Checkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFBE28261C482800959485 /* Checkout.swift */; };
+		70EFBE2C261C5A5200959485 /* Auth0TokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFBE2B261C5A5200959485 /* Auth0TokenRequest.swift */; };
+		70EFBE2F261C627E00959485 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFBE2E261C627E00959485 /* RestClient.swift */; };
+		70EFBE32261D07EA00959485 /* CreateOrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFBE31261D07EA00959485 /* CreateOrderRequest.swift */; };
+		70EFBE35261D11B500959485 /* CreateOrderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFBE34261D11B500959485 /* CreateOrderResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		709C2F8E261D68E300FC61F3 /* ZipWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipWebViewController.swift; sourceTree = "<group>"; };
+		709C2F91261D73AC00FC61F3 /* ZipWebViewRedirect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipWebViewRedirect.swift; sourceTree = "<group>"; };
+		709C2F94261D7F2100FC61F3 /* ZipWebViewRedirectProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipWebViewRedirectProtocol.swift; sourceTree = "<group>"; };
+		70CD6583261BFB2F0076E1E4 /* ZipCheckout-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZipCheckout-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70CD6586261BFB2F0076E1E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70CD6588261BFB2F0076E1E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		70CD658A261BFB2F0076E1E4 /* CheckoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutController.swift; sourceTree = "<group>"; };
+		70CD658D261BFB2F0076E1E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70CD658F261BFB310076E1E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70CD6592261BFB310076E1E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70CD6594261BFB310076E1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70CD659B261BFC270076E1E4 /* Auth0Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth0Client.swift; sourceTree = "<group>"; };
+		70CD659E261BFC450076E1E4 /* ZipNzClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipNzClient.swift; sourceTree = "<group>"; };
+		70CD65A2261C180D0076E1E4 /* Auth0TokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth0TokenResponse.swift; sourceTree = "<group>"; };
+		70EFBE28261C482800959485 /* Checkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkout.swift; sourceTree = "<group>"; };
+		70EFBE2B261C5A5200959485 /* Auth0TokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth0TokenRequest.swift; sourceTree = "<group>"; };
+		70EFBE2E261C627E00959485 /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
+		70EFBE31261D07EA00959485 /* CreateOrderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderRequest.swift; sourceTree = "<group>"; };
+		70EFBE34261D11B500959485 /* CreateOrderResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70CD6580261BFB2F0076E1E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70CD657A261BFB2F0076E1E4 = {
+			isa = PBXGroup;
+			children = (
+				70CD6585261BFB2F0076E1E4 /* ZipCheckout-iOS */,
+				70CD6584261BFB2F0076E1E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		70CD6584261BFB2F0076E1E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70CD6583261BFB2F0076E1E4 /* ZipCheckout-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70CD6585261BFB2F0076E1E4 /* ZipCheckout-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				70EFBE27261C47F300959485 /* Clients */,
+				70CD65A1261C17FF0076E1E4 /* Models */,
+				70CD6586261BFB2F0076E1E4 /* AppDelegate.swift */,
+				70CD6588261BFB2F0076E1E4 /* SceneDelegate.swift */,
+				70CD658C261BFB2F0076E1E4 /* Main.storyboard */,
+				70CD658A261BFB2F0076E1E4 /* CheckoutController.swift */,
+				70CD658F261BFB310076E1E4 /* Assets.xcassets */,
+				70CD6591261BFB310076E1E4 /* LaunchScreen.storyboard */,
+				70CD6594261BFB310076E1E4 /* Info.plist */,
+				70EFBE28261C482800959485 /* Checkout.swift */,
+				709C2F8E261D68E300FC61F3 /* ZipWebViewController.swift */,
+			);
+			name = "ZipCheckout-iOS";
+			sourceTree = "<group>";
+		};
+		70CD65A1261C17FF0076E1E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70CD65A2261C180D0076E1E4 /* Auth0TokenResponse.swift */,
+				70EFBE2B261C5A5200959485 /* Auth0TokenRequest.swift */,
+				70EFBE31261D07EA00959485 /* CreateOrderRequest.swift */,
+				70EFBE34261D11B500959485 /* CreateOrderResponse.swift */,
+				709C2F91261D73AC00FC61F3 /* ZipWebViewRedirect.swift */,
+				709C2F94261D7F2100FC61F3 /* ZipWebViewRedirectProtocol.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		70EFBE27261C47F300959485 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				70CD659B261BFC270076E1E4 /* Auth0Client.swift */,
+				70CD659E261BFC450076E1E4 /* ZipNzClient.swift */,
+				70EFBE2E261C627E00959485 /* RestClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70CD6582261BFB2F0076E1E4 /* ZipCheckout-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70CD6597261BFB310076E1E4 /* Build configuration list for PBXNativeTarget "ZipCheckout-iOS" */;
+			buildPhases = (
+				70CD657F261BFB2F0076E1E4 /* Sources */,
+				70CD6580261BFB2F0076E1E4 /* Frameworks */,
+				70CD6581261BFB2F0076E1E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZipCheckout-iOS";
+			productName = "ZipCheckout-iOS";
+			productReference = 70CD6583261BFB2F0076E1E4 /* ZipCheckout-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70CD657B261BFB2F0076E1E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					70CD6582261BFB2F0076E1E4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 70CD657E261BFB2F0076E1E4 /* Build configuration list for PBXProject "ZipCheckout-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70CD657A261BFB2F0076E1E4;
+			productRefGroup = 70CD6584261BFB2F0076E1E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70CD6582261BFB2F0076E1E4 /* ZipCheckout-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70CD6581261BFB2F0076E1E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70CD6593261BFB310076E1E4 /* LaunchScreen.storyboard in Resources */,
+				70CD6590261BFB310076E1E4 /* Assets.xcassets in Resources */,
+				70CD658E261BFB2F0076E1E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70CD657F261BFB2F0076E1E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				709C2F95261D7F2100FC61F3 /* ZipWebViewRedirectProtocol.swift in Sources */,
+				70EFBE32261D07EA00959485 /* CreateOrderRequest.swift in Sources */,
+				709C2F8F261D68E300FC61F3 /* ZipWebViewController.swift in Sources */,
+				70CD658B261BFB2F0076E1E4 /* CheckoutController.swift in Sources */,
+				70CD65A3261C180D0076E1E4 /* Auth0TokenResponse.swift in Sources */,
+				709C2F92261D73AC00FC61F3 /* ZipWebViewRedirect.swift in Sources */,
+				70EFBE35261D11B500959485 /* CreateOrderResponse.swift in Sources */,
+				70CD659C261BFC270076E1E4 /* Auth0Client.swift in Sources */,
+				70EFBE29261C482800959485 /* Checkout.swift in Sources */,
+				70EFBE2F261C627E00959485 /* RestClient.swift in Sources */,
+				70CD659F261BFC450076E1E4 /* ZipNzClient.swift in Sources */,
+				70CD6587261BFB2F0076E1E4 /* AppDelegate.swift in Sources */,
+				70EFBE2C261C5A5200959485 /* Auth0TokenRequest.swift in Sources */,
+				70CD6589261BFB2F0076E1E4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		70CD658C261BFB2F0076E1E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70CD658D261BFB2F0076E1E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		70CD6591261BFB310076E1E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70CD6592261BFB310076E1E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70CD6595261BFB310076E1E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		70CD6596261BFB310076E1E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70CD6598261BFB310076E1E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ZipNz.ZipCheckout-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		70CD6599261BFB310076E1E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ZipNz.ZipCheckout-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70CD657E261BFB2F0076E1E4 /* Build configuration list for PBXProject "ZipCheckout-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70CD6595261BFB310076E1E4 /* Debug */,
+				70CD6596261BFB310076E1E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70CD6597261BFB310076E1E4 /* Build configuration list for PBXNativeTarget "ZipCheckout-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70CD6598261BFB310076E1E4 /* Debug */,
+				70CD6599261BFB310076E1E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70CD657B261BFB2F0076E1E4 /* Project object */;
+}
