@@ -51,7 +51,7 @@ By intercepting the navigation actions via
     decisionHandler: @escaping (WKNavigationActionPolicy) -> Swift.Void
   ){}
 ```
-We can see when either the SuccessUrl or FailureUrl are hit to determine what state the order has reached. In this example, we display a popup in the parent controller to notify the user on their order status
+We can see when either the SuccessUrl or FailureUrl are hit and determine what state the order has reached. In this example, we display a popup in the parent controller to notify the user on their order status
 
 
 ## Trouble shooting
