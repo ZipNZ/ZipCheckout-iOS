@@ -13,7 +13,7 @@ An example on how to handle the Zip NZ checkout flow from iOS
 
 ## Running the App
 
-Ideally - run the app inside an IPhone X (and above) for ease of use. 
+Ideally - run the app inside an IPhone X (and above) simulator for ease of use. 
 
 Most of the input values are defaulted at the start page (and inside the code). Feel free to experiment by changing the values to meet your needs
 
