@@ -67,7 +67,7 @@ public class ZipNzClient: RestClient {
       """
 
     var request = URLRequest(
-      url: URL(string: "https://\(self._apiInstance)/order")!, timeoutInterval: Double.infinity)
+      url: URL(string: "https://\(self._apiInstance)/order")!)
 
     request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 

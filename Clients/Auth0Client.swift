@@ -32,7 +32,7 @@ class Auth0Client: RestClient {
       self._clientId, self._clientSecret, "https://\(self.auth0Audience)", "client_credentials")
 
     var request = URLRequest(
-      url: URL(string: "https://\(self.auth0Domain)/oauth/token")!, timeoutInterval: Double.infinity
+      url: URL(string: "https://\(self.auth0Domain)/oauth/token")! 
     )
 
     request.addValue("application/json", forHTTPHeaderField: "Content-Type")
