@@ -7,15 +7,17 @@
 
 import Foundation
 
+/// An example of how to interact with the ZipNz API
+///
+/// IMPORTANT NOTE -
+/// we would want to create the order on a backend rather than the client
+/// application. This is purely to keep the example fairly self contained
 public class ZipNzClient: RestClient {
   private var _accessToken: String
   private var _apiInstance: String = "sandbox.zip.co/nz/api"
   private var _jsonEncoder: JSONEncoder = JSONEncoder()
   private var _jsonDecoder: JSONDecoder = JSONDecoder()
 
-  /**
-     An example of how to interact with the ZipNz  API
-     */
   init(_ accessToken: String) {
     self._accessToken = accessToken
   }
