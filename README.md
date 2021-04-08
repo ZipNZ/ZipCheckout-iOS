@@ -45,7 +45,8 @@ private var _redirectFailureUrl: String = "https://sandbox.zip.co/nz/api?yay=fal
 By intercepting the navigation actions via
 
 (https://developer.apple.com/documentation/webkit/wknavigationdelegate/1455641-webview)
-```
+
+```swift
  public func webView(
     _ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction,
     decisionHandler: @escaping (WKNavigationActionPolicy) -> Swift.Void
