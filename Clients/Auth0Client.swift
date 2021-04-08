@@ -8,6 +8,11 @@
 import Foundation
 
 /// Simple Auth0 Client implementation
+///
+/// IMPORTANT NOTE -
+/// we would want to retrieve the access token from a backend in reality.
+/// This is purely to keep the example fairly self contained
+
 class Auth0Client: RestClient {
 
   private var _clientId: String
