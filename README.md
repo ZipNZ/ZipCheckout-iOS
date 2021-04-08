@@ -2,8 +2,6 @@
 
 An example on how to handle the Zip NZ checkout flow from iOS
 
-
-
 ## Prerequisites
 
 * Xcode 12.4 or later
@@ -54,6 +52,11 @@ By intercepting the navigation actions via
 ```
 We can see when either the SuccessUrl or FailureUrl are hit and determine what state the order has reached. In this example, we display a popup in the parent controller to notify the user on their order status
 
+## In regards to Auth0Client.swift / ZipNzClient.swift
+
+These clients are purely to keep the example self-contained. In reality, your app must call your own ecommerce platform Api to create the orders and provide Zip NZ checkout urls for the web view.
+
+We completely discourage the storage of any Zip NZ credentials in a client app. We also completely discourage direct access to the Zip NZ bearer token in a client app.
 
 ## Trouble shooting
 
