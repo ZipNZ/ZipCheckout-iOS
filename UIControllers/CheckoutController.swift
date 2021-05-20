@@ -44,7 +44,7 @@ class CheckoutController: UIViewController {
   }
 
   @IBAction func startCheckout(_ sender: Any) {
-    let checkout = Checkout(
+    let checkout = CheckoutService(
       merchantClientId.text!, merchantClientSecret.text!,
       auth0Domain.text!, audience.text!, Int(orderAmount.text!)!, itemName.text!)
 
