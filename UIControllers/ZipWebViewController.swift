@@ -17,9 +17,10 @@ class ZipWebViewController: UIViewController, WKNavigationDelegate {
 
   weak var webviewProtocol: ZipWebViewRedirectProtocol?
 
+  private var _loadingAnimationService: LoadingAnimationService = LoadingAnimationService()
+
   override func viewDidLoad() {
     super.viewDidLoad()
-
     let url = URL(string: checkoutUrl)!
     webView.load(URLRequest(url: url))
     webView.allowsBackForwardNavigationGestures = true
@@ -31,16 +32,24 @@ class ZipWebViewController: UIViewController, WKNavigationDelegate {
     view = webView
   }
 
+  override func viewDidAppear(_ animated: Bool) {
+    _loadingAnimationService.addCurrentView(self)
+    _loadingAnimationService.animate(true)
+  }
+
   public func webView(
     _ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction,
     decisionHandler: @escaping (WKNavigationActionPolicy) -> Swift.Void
   ) {
 
+    if !self.isIframeRequest(navigationAction) {
+      _loadingAnimationService.animate(true)
+    }
+
     if navigationAction.request.url != nil {
       if navigationAction.request.url!.absoluteString.contains(self.successRedirect) {
         print("Successful order")
         dismissWithStatus("Success!")
-
       }
 
       if navigationAction.request.url!.absoluteString.contains(self.failureRedirect) {
@@ -52,6 +61,18 @@ class ZipWebViewController: UIViewController, WKNavigationDelegate {
     decisionHandler(.allow)
   }
 
+  public func webView(_ webView: WKWebView, didStartProvisionalNavigation: WKNavigation) {
+    _loadingAnimationService.animate(true)
+  }
+
+  public func webView(_ webView: WKWebView, didCommit: WKNavigation) {
+    _loadingAnimationService.animate(true)
+  }
+
+  public func webView(_ webView: WKWebView, didFinish: WKNavigation) {
+    _loadingAnimationService.animate(false)
+  }
+
   private func dismissWithStatus(_ status: String) {
     if let presenter = presentingViewController as? CheckoutController {
       presenter.completionStatus = status
@@ -59,7 +80,15 @@ class ZipWebViewController: UIViewController, WKNavigationDelegate {
     }
   }
 
+  private func isIframeRequest(_ navAction: WKNavigationAction) -> Bool {
+    guard let isMainFrameRequest = navAction.targetFrame?.isMainFrame else {
+      return false
+    }
+    return !isMainFrameRequest
+  }
+
   override func viewDidDisappear(_ animated: Bool) {
     self.webviewProtocol?.onCompletion()
   }
+
 }

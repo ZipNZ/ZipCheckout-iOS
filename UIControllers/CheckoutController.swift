@@ -31,7 +31,8 @@ class CheckoutController: UIViewController {
   @IBOutlet weak var itemName: UITextField!
   @IBOutlet weak var orderAmount: UITextField!
   @IBOutlet weak var audience: UITextField!
-
+  @IBOutlet weak var loader: UIActivityIndicatorView!
+  
   var completionStatus: String = "Incomplete"
 
   override func viewDidLoad() {

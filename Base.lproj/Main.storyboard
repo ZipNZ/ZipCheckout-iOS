@@ -114,6 +114,11 @@
                                         <rect key="frame" x="100" y="18" width="171" height="97"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="pum-Ag-P6q">
+                                        <rect key="frame" x="0.0" y="293" width="379" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                                        <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.14823398860000001" green="0.062026504849999997" blue="0.4426715497" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -127,6 +132,7 @@
                         <outlet property="audience" destination="Hfb-Dr-wgW" id="rbt-Pz-4ep"/>
                         <outlet property="auth0Domain" destination="rle-8p-ggB" id="GtT-jM-Ehz"/>
                         <outlet property="itemName" destination="5vv-Ya-1ci" id="bC3-Qu-0ee"/>
+                        <outlet property="loader" destination="pum-Ag-P6q" id="NcU-lU-dtl"/>
                         <outlet property="merchantClientId" destination="Mzc-NN-hgw" id="F5c-8Q-mT8"/>
                         <outlet property="merchantClientSecret" destination="i2f-VN-9MZ" id="x1c-f5-d40"/>
                         <outlet property="orderAmount" destination="5R8-U9-hd5" id="Vcy-ry-Y0c"/>
@@ -134,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-750" y="78.16901408450704"/>
+            <point key="canvasLocation" x="-750.72463768115949" y="77.678571428571431"/>
         </scene>
         <!--Zip Web View Controller-->
         <scene sceneID="1vc-um-hvB">
@@ -149,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oa8-OL-JmM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="82" y="78"/>
+            <point key="canvasLocation" x="81.159420289855078" y="77.678571428571431"/>
         </scene>
     </scenes>
     <resources>
