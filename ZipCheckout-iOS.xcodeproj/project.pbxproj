@@ -10,7 +10,7 @@
 		709C2F8F261D68E300FC61F3 /* ZipWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C2F8E261D68E300FC61F3 /* ZipWebViewController.swift */; };
 		709C2F92261D73AC00FC61F3 /* ZipWebViewRedirect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C2F91261D73AC00FC61F3 /* ZipWebViewRedirect.swift */; };
 		709C2F95261D7F2100FC61F3 /* ZipWebViewRedirectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709C2F94261D7F2100FC61F3 /* ZipWebViewRedirectProtocol.swift */; };
-		70C105332657211E00C0B8A7 /* ToggleAnimationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C105322657211E00C0B8A7 /* ToggleAnimationService.swift */; };
+		70C105332657211E00C0B8A7 /* LoadingAnimationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C105322657211E00C0B8A7 /* LoadingAnimationService.swift */; };
 		70CD6587261BFB2F0076E1E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CD6586261BFB2F0076E1E4 /* AppDelegate.swift */; };
 		70CD6589261BFB2F0076E1E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CD6588261BFB2F0076E1E4 /* SceneDelegate.swift */; };
 		70CD658B261BFB2F0076E1E4 /* CheckoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CD658A261BFB2F0076E1E4 /* CheckoutController.swift */; };
@@ -31,7 +31,7 @@
 		709C2F8E261D68E300FC61F3 /* ZipWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipWebViewController.swift; sourceTree = "<group>"; };
 		709C2F91261D73AC00FC61F3 /* ZipWebViewRedirect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipWebViewRedirect.swift; sourceTree = "<group>"; };
 		709C2F94261D7F2100FC61F3 /* ZipWebViewRedirectProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipWebViewRedirectProtocol.swift; sourceTree = "<group>"; };
-		70C105322657211E00C0B8A7 /* ToggleAnimationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleAnimationService.swift; sourceTree = "<group>"; };
+		70C105322657211E00C0B8A7 /* LoadingAnimationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingAnimationService.swift; sourceTree = "<group>"; };
 		70CD6583261BFB2F0076E1E4 /* ZipCheckout-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZipCheckout-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70CD6586261BFB2F0076E1E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70CD6588261BFB2F0076E1E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				70EFBE28261C482800959485 /* CheckoutService.swift */,
-				70C105322657211E00C0B8A7 /* ToggleAnimationService.swift */,
+				70C105322657211E00C0B8A7 /* LoadingAnimationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -208,7 +208,7 @@
 				709C2F95261D7F2100FC61F3 /* ZipWebViewRedirectProtocol.swift in Sources */,
 				70EFBE32261D07EA00959485 /* CreateOrderRequest.swift in Sources */,
 				709C2F8F261D68E300FC61F3 /* ZipWebViewController.swift in Sources */,
-				70C105332657211E00C0B8A7 /* ToggleAnimationService.swift in Sources */,
+				70C105332657211E00C0B8A7 /* LoadingAnimationService.swift in Sources */,
 				70CD658B261BFB2F0076E1E4 /* CheckoutController.swift in Sources */,
 				70CD65A3261C180D0076E1E4 /* Auth0TokenResponse.swift in Sources */,
 				709C2F92261D73AC00FC61F3 /* ZipWebViewRedirect.swift in Sources */,
