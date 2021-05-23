@@ -19,7 +19,7 @@
 		70CD659C261BFC270076E1E4 /* Auth0Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CD659B261BFC270076E1E4 /* Auth0Client.swift */; };
 		70CD659F261BFC450076E1E4 /* ZipNzClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CD659E261BFC450076E1E4 /* ZipNzClient.swift */; };
 		70CD65A3261C180D0076E1E4 /* Auth0TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CD65A2261C180D0076E1E4 /* Auth0TokenResponse.swift */; };
-		70EFBE29261C482800959485 /* Checkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFBE28261C482800959485 /* Checkout.swift */; };
+		70EFBE29261C482800959485 /* CheckoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFBE28261C482800959485 /* CheckoutService.swift */; };
 		70EFBE2C261C5A5200959485 /* Auth0TokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFBE2B261C5A5200959485 /* Auth0TokenRequest.swift */; };
 		70EFBE2F261C627E00959485 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFBE2E261C627E00959485 /* RestClient.swift */; };
 		70EFBE32261D07EA00959485 /* CreateOrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFBE31261D07EA00959485 /* CreateOrderRequest.swift */; };
@@ -41,7 +41,7 @@
 		70CD659B261BFC270076E1E4 /* Auth0Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth0Client.swift; sourceTree = "<group>"; };
 		70CD659E261BFC450076E1E4 /* ZipNzClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipNzClient.swift; sourceTree = "<group>"; };
 		70CD65A2261C180D0076E1E4 /* Auth0TokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth0TokenResponse.swift; sourceTree = "<group>"; };
-		70EFBE28261C482800959485 /* Checkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkout.swift; sourceTree = "<group>"; };
+		70EFBE28261C482800959485 /* CheckoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutService.swift; sourceTree = "<group>"; };
 		70EFBE2B261C5A5200959485 /* Auth0TokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth0TokenRequest.swift; sourceTree = "<group>"; };
 		70EFBE2E261C627E00959485 /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
 		70EFBE31261D07EA00959485 /* CreateOrderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderRequest.swift; sourceTree = "<group>"; };
@@ -59,6 +59,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70C1052F26571DBA00C0B8A7 /* UIControllers */ = {
+			isa = PBXGroup;
+			children = (
+				70CD658A261BFB2F0076E1E4 /* CheckoutController.swift */,
+				709C2F8E261D68E300FC61F3 /* ZipWebViewController.swift */,
+			);
+			path = UIControllers;
+			sourceTree = "<group>";
+		};
+		70C1053026571DCA00C0B8A7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				70EFBE28261C482800959485 /* CheckoutService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		70CD657A261BFB2F0076E1E4 = {
 			isa = PBXGroup;
 			children = (
@@ -78,17 +95,16 @@
 		70CD6585261BFB2F0076E1E4 /* ZipCheckout-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				70C1053026571DCA00C0B8A7 /* Services */,
+				70C1052F26571DBA00C0B8A7 /* UIControllers */,
 				70EFBE27261C47F300959485 /* Clients */,
 				70CD65A1261C17FF0076E1E4 /* Models */,
 				70CD6586261BFB2F0076E1E4 /* AppDelegate.swift */,
 				70CD6588261BFB2F0076E1E4 /* SceneDelegate.swift */,
 				70CD658C261BFB2F0076E1E4 /* Main.storyboard */,
-				70CD658A261BFB2F0076E1E4 /* CheckoutController.swift */,
 				70CD658F261BFB310076E1E4 /* Assets.xcassets */,
 				70CD6591261BFB310076E1E4 /* LaunchScreen.storyboard */,
 				70CD6594261BFB310076E1E4 /* Info.plist */,
-				70EFBE28261C482800959485 /* Checkout.swift */,
-				709C2F8E261D68E300FC61F3 /* ZipWebViewController.swift */,
 			);
 			name = "ZipCheckout-iOS";
 			sourceTree = "<group>";
@@ -194,7 +210,7 @@
 				709C2F92261D73AC00FC61F3 /* ZipWebViewRedirect.swift in Sources */,
 				70EFBE35261D11B500959485 /* CreateOrderResponse.swift in Sources */,
 				70CD659C261BFC270076E1E4 /* Auth0Client.swift in Sources */,
-				70EFBE29261C482800959485 /* Checkout.swift in Sources */,
+				70EFBE29261C482800959485 /* CheckoutService.swift in Sources */,
 				70EFBE2F261C627E00959485 /* RestClient.swift in Sources */,
 				70CD659F261BFC450076E1E4 /* ZipNzClient.swift in Sources */,
 				70CD6587261BFB2F0076E1E4 /* AppDelegate.swift in Sources */,

@@ -8,7 +8,7 @@
 import Foundation
 
 /// Initiates the Zip Nz checkout flow
-class Checkout {
+class CheckoutService {
 
   private var auth0Client: Auth0Client
   private var _itemName: String
