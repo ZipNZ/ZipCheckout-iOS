@@ -10,36 +10,38 @@ import UIKit
 
 /// Service that handles the presentation and dismissal of a loading modal
 class LoadingAnimationService {
-  
+
   private var _viewContext: UIViewController?
   private var _animatingController: UIViewController
-  
-  init(){
-    
-    let loaderController = UIAlertController(title: nil, message: "Loading...", preferredStyle: .alert)
 
-    let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
-    
+  init() {
+
+    let loaderController = UIAlertController(
+      title: nil, message: "Loading...", preferredStyle: .alert)
+
+    let loadingIndicator = UIActivityIndicatorView(
+      frame: CGRect(x: 10, y: 5, width: 50, height: 50))
+
     loadingIndicator.style = UIActivityIndicatorView.Style.large
     loadingIndicator.hidesWhenStopped = true
-    loadingIndicator.startAnimating();
+    loadingIndicator.startAnimating()
 
     loaderController.view.addSubview(loadingIndicator)
-    
+
     _animatingController = loaderController
   }
-  
-  func addCurrentView(_ viewContext: UIViewController){
+
+  func addCurrentView(_ viewContext: UIViewController) {
     _viewContext = viewContext
   }
-  
+
   func animate(_ animate: Bool) {
- 
+
     guard let viewContext = _viewContext else {
       NSLog("view controller not set")
       return
     }
-    
+
     if animate {
       if _animatingController.presentingViewController == nil {
         NSLog("Loading...")
