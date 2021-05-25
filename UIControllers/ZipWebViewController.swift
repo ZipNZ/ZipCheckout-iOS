@@ -19,6 +19,8 @@ class ZipWebViewController: UIViewController, WKNavigationDelegate {
 
   private var _loadingAnimationService: LoadingAnimationService = LoadingAnimationService()
 
+  private var _loaderObservation: NSKeyValueObservation?
+
   override func viewDidLoad() {
     super.viewDidLoad()
     let url = URL(string: checkoutUrl)!
@@ -29,6 +31,7 @@ class ZipWebViewController: UIViewController, WKNavigationDelegate {
   override func loadView() {
     webView = WKWebView()
     webView.navigationDelegate = self
+    _loaderObservation = self.closeSpinnerOnCompletion()
     view = webView
   }
 
@@ -41,10 +44,6 @@ class ZipWebViewController: UIViewController, WKNavigationDelegate {
     _ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction,
     decisionHandler: @escaping (WKNavigationActionPolicy) -> Swift.Void
   ) {
-
-    if !self.isIframeRequest(navigationAction) {
-      _loadingAnimationService.animate(true)
-    }
 
     if navigationAction.request.url != nil {
       if navigationAction.request.url!.absoluteString.contains(self.successRedirect) {
@@ -61,21 +60,22 @@ class ZipWebViewController: UIViewController, WKNavigationDelegate {
     decisionHandler(.allow)
   }
 
-  public func webView(_ webView: WKWebView, didStartProvisionalNavigation: WKNavigation) {
-    _loadingAnimationService.animate(true)
-  }
-
-  public func webView(_ webView: WKWebView, didCommit: WKNavigation) {
-    _loadingAnimationService.animate(true)
-  }
-
-  public func webView(_ webView: WKWebView, didFinish: WKNavigation) {
-    _loadingAnimationService.animate(false)
+  private func closeSpinnerOnCompletion() -> NSKeyValueObservation {
+    return self.webView.observe(
+      \.isLoading,
+      changeHandler: { (webView, _) in
+        if webView.isLoading {
+          self._loadingAnimationService.animate(true)
+        } else {
+          self._loadingAnimationService.animate(false)
+        }
+      })
   }
 
   private func dismissWithStatus(_ status: String) {
     if let presenter = presentingViewController as? CheckoutController {
       presenter.completionStatus = status
+      self._loadingAnimationService.animate(false)
       dismiss(animated: true, completion: nil)
     }
   }
@@ -89,6 +89,10 @@ class ZipWebViewController: UIViewController, WKNavigationDelegate {
 
   override func viewDidDisappear(_ animated: Bool) {
     self.webviewProtocol?.onCompletion()
+  }
+
+  deinit {
+    self._loaderObservation = nil
   }
 
 }
